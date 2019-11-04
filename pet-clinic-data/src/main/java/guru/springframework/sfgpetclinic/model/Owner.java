@@ -1,11 +1,13 @@
 package guru.springframework.sfgpetclinic.model;
 
+import java.util.Set;
+
 public class Owner extends Person {
 
-    public Owner() {
+    private Set<Pet> pets;
+
+    public Owner(Set<Pet> pets) {
+        this.pets = pets;
     }
 
-    public Owner(String lastName) {
-        super.setLastName(lastName);
-    }
 }
